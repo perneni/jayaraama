@@ -6,8 +6,12 @@ on:
 
 jobs:
   build:
-    name: Reusable Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: echo hello world
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "haradev"
+          replace: "rudradev"
+
