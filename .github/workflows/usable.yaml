@@ -1,0 +1,13 @@
+---
+name: Reusable
+
+on:
+  workflow_call:
+
+jobs:
+  build:
+    name: Reusable Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo hello world
