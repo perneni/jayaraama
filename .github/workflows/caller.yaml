@@ -8,4 +8,4 @@ on:
 jobs:
   build:
     name: Caller
-    uses: iautom8things/test_reusable_workflows/.github/workflows/usable.yaml@master
+    uses: perneni/jayaraama/.github/workflows/usable.yaml@master
